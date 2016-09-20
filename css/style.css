@@ -1,4 +1,35 @@
-.jumbotron {
+@import 'https://fonts.googleapis.com/css?family=Catamaran|Montserrat';
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	font-size: 24px;
+	margin-top: 0;
+}
+
+p, li {
+	font-family: 'Catamaran', sans-serif;
+}
+
+.header {
 	background-color: #161616;
 	color: #FFF;
+}
+.header p {
+	font-size: 16px;
+}
+
+
+.framed-app-screen {
+	background-image: url("../img/Apple_iPhone_6s_Space_Gray.png");
+	padding: 108px 43px 108px 43px;
+	width: 360px;
+	height: 703px;
+}
+
+.app-screen {
+	width: 274px;
+	height: 485px;
 }
