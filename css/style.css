@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Catamaran|Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Montserrat';
 
 h1, h2, h3, h4, h5 {
 	font-family: 'Montserrat', sans-serif;
@@ -10,7 +10,7 @@ h1 {
 }
 
 p, li {
-	font-family: 'Catamaran', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .header {
