@@ -13,6 +13,11 @@ p, li {
 	font-family: 'Open Sans', sans-serif;
 }
 
+p .highlight {
+  font-weight: bold;
+  color: #F00;
+}
+
 .header {
 	background-color: #161616;
 	color: #FFF;
@@ -20,8 +25,6 @@ p, li {
 .header p {
 	font-size: 16px;
 }
-
-
 .framed-app-screen {
 	background-image: url("../img/Apple_iPhone_6s_Space_Gray.png");
 	padding: 108px 43px 108px 43px;
@@ -32,4 +35,31 @@ p, li {
 .app-screen {
 	width: 274px;
 	height: 485px;
+}
+
+.framed-app-screen.faded {
+	opacity: 0.05;
+}
+
+.framed-app-screen.faded + div {
+	position: absolute;
+	top: 331px;
+	left: 0;
+	width: 100%;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.row.equal-height {
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display:         flex;
+	}
+
+	.vertical-center {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	}
 }
