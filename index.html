@@ -1,130 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
     <title>WaitWaitGo! - Simple Rest Timer App for iOS</title>
     <meta name="description" content="Simple iOS app to time your rest periods during a workout">
-    <meta name="keywords" content="strength, fitness, wheightlifting, bodybuilding, workouts, mobile apps, iOS, iPhone"/>
-
-    <meta property="og:type"        content="website" />
-    <meta property="og:url"         content="http://waitwaitgo.com" />
-    <meta property="og:title"       content="WaitWaitGo! - Simple Rest Timer App for iOS" />
-    <meta property="og:image"       content="" />
-    <meta property="og:description" content="Simple iOS app to time your rest periods during a workout. Easy to use, doesn't get in the way, let's you focus on your workout!" >
-
+    <meta name="keywords" content="strength, fitness, wheightlifting, bodybuilding, workouts, mobile apps, iOS, iPhone" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://waitwaitgo.com" />
+    <meta property="og:title" content="WaitWaitGo! - Simple Rest Timer App for iOS" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Simple iOS app to time your rest periods during a workout. Easy to use, doesn't get in the way, let's you focus on your workout!">
     <link rel="icon" href="favicon.ico">
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <link type="text/css" rel="stylesheet" href="./css/style.css">
-
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="header">
-      <div class="container text-center">
-        <img src="./img/WWG_red_green_circles_3_short_180.png"/>
-        <h1>WaitWaitGo!</h1>
-        <p>Simple Rest Timer App for iOS</p>
-      </div>
+        <div class="container text-center">
+            <img src="./img/WWG_red_green_circles_3_short_180.png" />
+            <h1>WaitWaitGo!</h1>
+            <p>Simple Rest Timer App for iOS</p>
+        </div>
     </div>
-
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h3>What can you do with it?</h3>
-          <p></p>
-          <ul>
-            <li> it’s a stopwatch</li>
-            <li> start the countdown by pressing one of the time buttons</li>
-            <li> see the remaining and passed time</li>
-            <li> reset it if you don’t need it anymore</li>
-            <li> change the preset times</li>
-          </ul>
-
-          <h3>What is it used for?</h3>
-          <p>It's primarily used for timing rest periods during a strength training workout. Let your phone notify you when it's time to start the next set or exercise.</p>
-
-          <h3>What makes this app better than the others?</h3>
-          <p>I'm glad you asked.</p>
-          <p class="lead text-uppercase">Scroll down to find out why this is <span class="highlight">the best rest timer app</span></p>
-
-        </div>
-        <div class="col-md-8">
-          <div class="row">
-            <div class="col-md-6">
-            <div class="framed-app-screen"><img class="app-screen" src="../screens/timer-running.png"></div>
+        <div class="row">
+            <div class="col-md-4 h3-more-space">
+                <h3>What does it do?</h3>
+                <ul>
+                    <li>it’s a stopwatch</li>
+                    <li>start the countdown by pressing one of the time buttons</li>
+                    <li>reset it if you don’t need it anymore</li>
+                    <li>press'n'hold the time button to change the time</li>
+                </ul>
+                <h3>What is it used for?</h3>
+                <p>It's primarily used for timing rest periods during a strength training workout. Let your phone notify you when it's time to start the next set or exercise.</p>
+                <h3>What makes this app better than the others?</h3>
+                <p>I'm glad you asked.</p>
+                <p>Scroll down to find out why this is
+                    <br/><span class="text-highlight lead">the best rest timer app (FREE, too!)</span></p>
             </div>
-            <div class="col-md-6">
-            <div class="framed-app-screen"><img class="app-screen" src="../screens/time-picker.png"></div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="app-screen-frame"><img class="app-screen" src="../screens/timer-running.png"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="app-screen-frame"><img class="app-screen" src="../screens/time-picker.png"></div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-
-      <div class="row equal-height">
-        <div class="col-md-8 vertical-center">
-            <h3>Change the time interval while the timer is already running</h3>
-            <p>The app recalculates the remaining time and keeps the time that already passed.</p>
-            <p>Sometimes there is just not enough energy in the tank and you need an extra minute to rest.</p>
+        <hr>
+        <div class="row equal-height">
+            <div class="col-md-8 vertical-center">
+                <h3>Change the time interval while the timer is already running</h3>
+                <p>The app recalculates the remaining time and keeps the time that already passed.</p>
+                <p>Sometimes there is just not enough energy in the tank and you need an extra minute to rest.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="app-screen-frame">
+                    <img class="app-screen" src="../screens/timer-running.png">
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <div class="framed-app-screen">
-            <img class="app-screen" src="../screens/timer-running.png">
-          </div>
+        <hr>
+        <div class="row equal-height">
+            <div class="col-md-8 vertical-center">
+                <h3>This app respects your phone battery, your music and your ears</h3>
+                <p>Saves battery. Works in the background and with the screen locked.</p>
+                <p>A gentle sound warning signals you to start preparing for the next set. Another more distinct sound follows when the time is up.</p>
+                <p>Uses carefully selected custom sounds that play nice with your workout music. Noticeable enough not to miss them, but still easy on your ears.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="app-screen-frame faded">
+                    <div class="app-screen black"></div>
+                </div>
+                <span class="text-center text-over-app-screen">
+                  No need to look at the phone<br/> or a clock at all.
+                  <br/><br/>Just focus on visualising <br/> your next set.
+                </span>
+            </div>
         </div>
-      </div>
-
-      <div class="row equal-height">
-        <div class="col-md-8 vertical-center">
-            <h3>Respects your phone battery, your music and your ears</h3>
-            <p>Saves battery. Works in the background and with the screen locked. Sound warning lets you know when it's time to get ready for the next set.</p>
-            <p>Uses carefully selected custom sounds that play nice with your workout music. Noticeable enough not to miss it, but still easy on your ears.</p>
+        <hr>
+        <div class="row equal-height">
+            <div class="col-md-8 vertical-center">
+                <h3>Actionable iOS notification</h3>
+                <p>iOS notification appears when the time is up.</p>
+                <p>When you’re done with the set, you can restart the timer from the notification without unlocking the screen! No need to think about how long your rest time is after each set.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="app-screen-frame"><img class="app-screen" src="../screens/timer-running.png"></div>
+            </div>
         </div>
-        <div class="col-md-4">
-           <div class="framed-app-screen faded"><img class="app-screen" src="../screens/timer-running.png"></div>
-           <div class="text-center">No need to look at the phone or a clock at all.<br/>Just focus on visualising your next set.</div>
+        <hr>
+        <div class="row more-space">
+            <div class="col-md-12">
+                <h3>Still, did we really need another timer app?</h3>
+                <p>Yes! Before making this app, I downloaded and tried 12 different timer apps on my iPhone. And each one of them was missing something from the list of features above. So I made an app that has it all. It requires as little attention as possible during my workout and it helps me focus on my rest. I hope that it will do the same for you!</p>
+                <h3>Try it out, it's completely FREE!</h3>
+                <p>
+                    <span class="text-dim">It's available on the App Store and you can download it by clicking this button from your iOS device.</span>
+                    <br/>Coming soon! If you'd like early access, let me know on <a href="https://www.facebook.com/engineeringstrong/" target="blank">Facebook</a>, <a href="https://www.instagram.com/engineeringstrong/" target="blank">Instagram</a>, or <a href="https://twitter.com/eng_strong" target="blank">Twitter</a>.
+                </p>
+                <h3>Suggestions for improvements?</h3>
+                <p>WaitWaitGo! makes my workouts better almost daily. Since I use it so much, I have some ideas how to improve it, but I’d also love to hear your feedback! If you have any ideas how to make it better, please send me your suggestions on <a href="https://www.facebook.com/engineeringstrong/" target="blank">Facebook</a>, <a href="https://www.instagram.com/engineeringstrong/" target="blank">Instagram</a>, or <a href="https://twitter.com/eng_strong" target="blank">Twitter</a>.</p>
+            </div>
         </div>
-      </div>
-
-      <div class="row equal-height">
-        <div class="col-md-8 vertical-center">
-            <h3>Actionable iOS notification</h3>
-            <p>iOS notification appears when the time is up. You are notified with a sound to start the next set.</p>
-            <p>When you’re done with the set, you can even restart the timer without unlocking the screen! No need to think about how long is your rest time after each set.</p>
-        </div>
-        <div class="col-md-4">
-           <div class="framed-app-screen"><img class="app-screen" src="../screens/timer-running.png"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12">
-        <p>WaitWaitGo! is the best rest timer app out there. I know because I tried them all. No kidding, I downloaded and used 12 different timer apps on my device. Since none of them worked as I wanted them to, I decided to make my own.</p>
-          <p>I use this app almost every day in my workouts. So I want to make it even more useful. I have some ideas how to improve it, but I’d also love to hear your feedback! If you have any ideas how to make it better, please send me your suggestions. Send me a message via <a href="https://www.facebook.com/engineeringstrong/" target="blank">Facebook</a>, <a href="https://www.instagram.com/engineeringstrong/" target="blank">Instagram</a>, or <a href="https://twitter.com/eng_strong" target="blank">Twitter</a>.</p>
-        </div>
-      </div>
-
-      <hr>
-
-      <footer class="text-center">
-        <p>&copy; 2016 Srdan Stanic | <a href="http://engineeringstrong.com">EngineeringStrong</a></p>
-      </footer>
-    </div> <!-- /container -->
+        <hr>
+        <footer class="text-center">
+            <p>&copy; 2016 Srdan Stanic | <a href="http://engineeringstrong.com">EngineeringStrong</a></p>
+        </footer>
+    </div>
+    <!-- /container -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
-  </body>
+</body>
+
 </html>
