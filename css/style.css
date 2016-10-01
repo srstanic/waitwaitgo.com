@@ -50,7 +50,7 @@ h5 {
 
 .app-screen-frame {
     background-image: url("../img/Apple_iPhone_6s_Space_Gray.png");
-    padding: 87px 34px 87px 34px;
+    padding: 86px 34px 86px 34px;
     width: 290px;
     height: 565px;
     margin-right: auto;
@@ -59,7 +59,7 @@ h5 {
 
 .app-screen {
     width: 222px;
-    height: 392px;
+    height: 394px;
 }
 
 .app-screen.black {
