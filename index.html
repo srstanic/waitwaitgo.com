@@ -142,16 +142,16 @@
         'time-change-while-running': '../screens/time-change-while-running.gif',
         'notification-action': '../screens/notification-action.gif'
       }
-      function getUpdateSrcOnImageFunc(imageId, gifImage) {
+      function getUpdateImageSrcFunc(imageId) {
         return function() {
-          document.getElementById(imageId).src = gifImage.src;
+          document.getElementById(imageId).src = this.src;
         }
       }
       for (var imageId in gifs) {
-        var gifPath = gifs[imageId]
+        var gifSrc = gifs[imageId]
         var gifImage = new Image();
-        gifImage.onload = getUpdateSrcOnImageFunc(imageId, gifImage)
-        gifImage.src = gifPath
+        gifImage.onload = getUpdateImageSrcFunc(imageId)
+        gifImage.src = gifSrc
       }
     }())
     </script>
