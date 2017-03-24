@@ -64,10 +64,10 @@
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="app-screen-frame"><img class="app-screen" src="../screens/timer-running.png"></div>
+                        <div class="app-screen-frame"><img id="timing-and-reset" class="app-screen" src="../screens/timer-running.png"></div>
                     </div>
                     <div class="col-md-6">
-                        <div class="app-screen-frame"><img class="app-screen" src="../screens/time-picker.png"></div>
+                        <div class="app-screen-frame"><img id="time-interval-change" class="app-screen" src="../screens/time-picker.png"></div>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@
             </div>
             <div class="col-md-4 text-center">
                 <div class="app-screen-frame">
-                    <img class="app-screen" src="../screens/time-changed-while-running.png">
+                    <img id="time-change-while-running" class="app-screen" src="../screens/time-changed-while-running.png">
                 </div>
             </div>
         </div>
@@ -111,14 +111,14 @@
                 <p>When you’re done with the set, you can restart the timer from the notification without unlocking the screen! No need to think about how long your rest time is after each set.</p>
             </div>
             <div class="col-md-4">
-                <div class="app-screen-frame"><img class="app-screen" src="../screens/notification-action.png"></div>
+                <div class="app-screen-frame"><img id="notification-action" class="app-screen" src="../screens/notification-action.png"></div>
             </div>
         </div>
         <hr>
         <div class="row">
             <div class="col-md-12 h3-more-space">
                 <h3>Still, did we really need another timer app?</h3>
-                <p>Yes! Before making this app, I downloaded and tried 12 different timer apps on my iPhone. And each one of them was missing something from the list of features above. So I made an app that has it all. It requires as little attention as possible during my workout and it helps me focus on my rest. I hope that it will do the same for you!</p>
+                <p>Before making WaitWaitGo!, I downloaded and tried 12 different timer apps. And each one of them was missing something from the list of features above. WaitWaitGo! requires as little attention as possible during my workout and it helps me focus on my rest. I hope that it will do the same for you!</p>
                 <h3>Try it out, it's completely FREE!</h3>
                 <p class="text-center">
                     <a href="https://itunes.apple.com/us/app/waitwaitgo!-simple-rest-timer/id1162311487?ls=1&mt=8" target="blank"><img src="img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" width="135" height="40" /></a>
@@ -133,6 +133,29 @@
         </footer>
     </div>
     <!-- /container -->
+
+    <script>
+    (function(){
+      var gifs = {
+        'timing-and-reset': '../screens/timing-and-reset.gif',
+        'time-interval-change': '../screens/time-interval-change.gif',
+        'time-change-while-running': '../screens/time-change-while-running.gif',
+        'notification-action': '../screens/notification-action.gif'
+      }
+      function getUpdateSrcOnImageFunc(imageId, gifImage) {
+        return function() {
+          document.getElementById(imageId).src = gifImage.src;
+        }
+      }
+      for (var imageId in gifs) {
+        var gifPath = gifs[imageId]
+        var gifImage = new Image();
+        gifImage.onload = getUpdateSrcOnImageFunc(imageId, gifImage)
+        gifImage.src = gifPath
+      }
+    }())
+    </script>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
